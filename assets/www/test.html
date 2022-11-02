@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>test</title>
+    <meta content="text/html; charset=UTF-8" />
+    
+  </head>
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+    	alert("showAndroidToast");
+        Android.showToast(toast);
+    }
+
+     function closeActivity() {
+     	alert("closeActivity");
+        Android.closeActivity();
+    }
+</script>
+<body>
+	<input type="button" value="Show Toast" onclick="javascript:showAndroidToast('Toast to JavaScript interface');" />
+	<br>
+	<input type="button" value="Close this Activity" onclick="javascript:closeActivity();" />
+</body>
+
+</html>

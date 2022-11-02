@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_nb_titleCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+	    <TextView
+	        android:id="@+id/tv_nb_categoryName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:fontFamily="sans-serif-condensed"
+	        android:text="ТАНД САНАЛ БОЛГОЖ БАЙНА"
+	        android:textColor="#151515"
+	        android:textSize="16dp" />
+	
+	    <TextView
+	        android:id="@+id/tv_nb_subText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:paddingTop="20dp"
+	        android:text="Шилдэг 100 ном" />
+	
+	    <ImageView
+	        android:id="@+id/iv_nb_btnOther"
+	        android:layout_width="70dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/btn_other" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+	    android:id="@+id/ll_nl_row"
+	    android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+</LinearLayout>

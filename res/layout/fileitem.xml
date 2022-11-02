@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_bookList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/ll_bookItem"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/booklistbackground"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_fileIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/epub_icon"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_bookItemDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_bookName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLength="25"
+                android:text="Номны нэр"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#151515"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:maxLength="35"
+                    android:paddingTop="5dp"
+                    android:text="Огноо" />
+
+                <TextView
+                    android:id="@+id/tv_fileSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="5dp"
+                    android:text="123.4KB" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_filePath"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Байршил" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_fileSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@array/nav_drawer_icons"
+        android:layout_weight="1" />
+
+</RelativeLayout>

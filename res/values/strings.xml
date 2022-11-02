@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Book Reader</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Action Bar Search</string>
+    <string name="action_extra_menu">Action Bar Extra Menu</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="nav_drawer_titles">
+        <item>Миний номын сан</item>
+        <item>Худалдаж авсан ном</item>
+        <item>Утасны файл</item>
+        <item>SD картны файл</item>
+        <item>Тохиргоо</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/icon</item>
+        <item>@drawable/icon</item>
+        <item>@drawable/icon</item>
+        <item>@drawable/icon</item>
+        <item>@drawable/icon</item>
+    </array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_item_one">ItemOne</string>
+    <string name="title_section1">МИНИЙ НОМЫН САН</string>
+    <string name="title_section2">ШИНЭ НОМ</string>
+    <string name="title_section3">ТЭМДЭГЛЭСЭН НОМ</string>
+    <string name="title_section4">ДЭЛГЭРЭНГҮЙ ТЕСТ ХУУДАС</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="title_activity_book_reader">BookReaderActivity</string>
+    <string name="title_activity_purchased_book">PurchasedBookActivity</string>
+
+</resources>

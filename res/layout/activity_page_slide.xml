@@ -1,0 +1,92 @@
+<!--
+  Copyright 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+
+	<RelativeLayout
+        android:id="@+id/rl_dScreen_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:alpha="0.9"
+        android:background="#282828"
+        android:padding="3dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_display_btnback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_arrow_left" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_display_btnback"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Номын нэр"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_display_btnback"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Зохиогч"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dScreen_footer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.9"
+        android:background="#282828"
+        android:padding="3dp"
+        android:visibility="invisible"  >
+
+        <TextView
+            android:id="@+id/tv_markedList_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Footer layout"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

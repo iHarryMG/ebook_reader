@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical"
+        android:padding="10dp" >
+		
+        <RatingBar
+            android:id="@+id/rb_rateBook_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:longClickable="false"
+            android:paddingTop="10dp"
+            android:stepSize="1" />
+        
+        <TextView
+            android:id="@+id/tv_ratingTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Үнэлгээ"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/et_rateComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="top|left"
+            android:hint="Сэтгэгдэл бичих"
+            android:inputType="textMultiLine"
+            android:maxLength="120"
+            android:minLines="4"
+            android:textSize="14dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_rateSubmit"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_btn_red"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Үнэлэх"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

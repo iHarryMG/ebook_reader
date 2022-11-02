@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <item android:id="@+id/action_search"
+        android:icon="@drawable/searchicon"
+        android:title="@string/action_search"
+        android:showAsAction="ifRoom"
+        android:actionViewClass="android.widget.SearchView" 
+        />
+    <item android:id="@+id/action_extra_menu"
+        android:title="@string/action_extra_menu"
+        android:icon="@drawable/extramenuicon"
+        android:showAsAction="always"/>
+</menu>
